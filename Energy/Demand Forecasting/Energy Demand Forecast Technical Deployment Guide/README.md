@@ -428,7 +428,7 @@ Now that we have the event hub and stream analytics configured we can configure 
 
 Leaving the generator running for about 15 minutes, we can validate that the services thus far are operating as expected.
 
-First validate event hub by following the steps in [Check Event Hub](#_Check-Event-Hub).
+First validate event hub by following the steps in [Check Event Hub](#Check-Event-Hub).
 
 Next, validate that the stream analytics job related to storage is working by following the steps in [Check Stream Jobs](#_Check_Stream_Jobs) for the energytemplateasablob job.
 
