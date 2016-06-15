@@ -620,7 +620,7 @@ First, we will create three data store Linked services for Azure storage service
 
 **StorageLinkedService.** This is the Linked Service for the Azure storage account.
 
--   Open the file ***Data Factory\\LinkedServices\\StorageLinkedService.json***. Replace \[Azure Storage Account Connection String\] with the connection string from the [Azure Storage Account](#azure-storage-account-1) section.
+-   Open the file ***Data Factory\\LinkedServices\\StorageLinkedService.json***. Replace \[Azure Storage Account Connection String\] with the connection string from the [Azure Storage Account](#azure-storage-account) section.
 
 -   Go back to ***Author and deploy*** in the data factory on ***portal.azure.com.***
 
@@ -638,7 +638,7 @@ First, we will create three data store Linked services for Azure storage service
 
 **AzureSqlLinkedService.** This is the Linked service for the Azure SQL database.
 
--   Open the file ***Data Factory\\LinkedServices\\AzureSqlLinkedService.json***. Replace \[Azure SQL server name\], \[Azure SQL database name\], \[SQL login user name\], and \[SQL login password\] with the corresponding information from the [Azure SQL Server and Database](#azure-sql-server) section.
+-   Open the file ***Data Factory\\LinkedServices\\AzureSqlLinkedService.json***. Replace \[Azure SQL server name\], \[Azure SQL database name\], \[SQL login user name\], and \[SQL login password\] with the corresponding information from the [Azure SQL Server and Database](#azure-sql-server-and-database) section.
 
 -   Go back to ***Author and deploy*** in the data factory on ***portal.azure.com.***
 
@@ -652,7 +652,7 @@ Next, we will create two compute Linked services for Azure computing services.
 
 **AzureMLEndpoint.** This is the Linked service for the Azure Machine Learning web service.
 
--   Open the file ***Data Factory\\LinkedServices\\AzureMLEndpoint.json***. Replace \[Azure Machine Learning web service URI\] and \[Azure Machine Learning web service API key\] with the corresponding information from the [Create Azure Studio ML Workspace and Experiment](#create-azure-studio) section.
+-   Open the file ***Data Factory\\LinkedServices\\AzureMLEndpoint.json***. Replace \[Azure Machine Learning web service URI\] and \[Azure Machine Learning web service API key\] with the corresponding information from the [Create Azure Studio ML Workspace and Experiment](#create-azure-studio-ml-workspace-and-experiment) section.
 
 -   Go back to ***Author and deploy*** in the data factory on ***portal.azure.com.***
 
@@ -844,7 +844,7 @@ PowerBI can also visualize real time data streamed through Stream Analytics.
 
 -   Log in to [Power BI online](https://powerbi.microsoft.com/en-us/)
 
--   On the left panel Datasets section in My Workspace, you should be able to see the dataset **EnergyStreamData**. This is the streaming data you pushed using the [Azure Stream Analytics Job](#azure-stream-analytics) **energytemplateasapbi. **
+-   On the left panel Datasets section in My Workspace, you should be able to see the dataset **EnergyStreamData**. This is the streaming data you pushed using the [Azure Stream Analytics Job](#azure-stream-analytics-jobs) **energytemplateasapbi. **
 
 -   Make sure the *Visualizations* and *Fields* panes are open and shown on the right side of the screen as shown below. If not, click “Edit report” on top of the report.   
   <img src="./media/image12.PNG" width="300" height="250" />
