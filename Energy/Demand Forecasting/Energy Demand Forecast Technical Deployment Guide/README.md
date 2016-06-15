@@ -207,7 +207,7 @@ The connection string and event hub name information will be needed to configure
 | Namespace           |energytemplate[UI][N]-ns|
 | Connection String   |                       ||
 
-### Check Event Hub
+### <span id="_Check_Event_Hub" class="anchor"><span id="_Toc451359333" class="anchor"></span></span>Check Event Hub
 
 While running the demo you can validate the event hub created is receiving messages by following the steps below. This can be a useful debugging step to determine if the event hub is functioning as expected, but note that the event hub will only show activity when we start the data generation tool later in this deployment guide:
 
@@ -560,7 +560,7 @@ Azure Data Factory
 
 We have now created all the necessary components for building data pipelines in Azure Data Factory. Data factory orchestrates all Azure data services to move and process data in pipelines.
 
-Below is an overview of the major steps we will implement in the data factory of this solution. Feel free to skip this section if you want to jump into [building the data factory](#_Create_Data_Factory).
+Below is an overview of the major steps we will implement in the data factory of this solution. Feel free to skip this section if you want to jump into [building the data factory](#create-data-factory).
 
 -   Data aggregation on HDInsight cluster. We will create an on demand HDInsight cluster to read and process the raw data being streamed in through event hub and stream analytics jobs. Data collected every 10 seconds from substations are aggregated into every hour and 3 regions using Hive scripts. Three additional Hive scripts are used to concatenate historical and the latest demand data to be used as input of Azure Machine Learning experiment.
 
@@ -620,7 +620,7 @@ First, we will create three data store Linked services for Azure storage service
 
 **StorageLinkedService.** This is the Linked Service for the Azure storage account.
 
--   Open the file ***Data Factory\\LinkedServices\\StorageLinkedService.json***. Replace \[Azure Storage Account Connection String\] with the connection string from the [Azure Storage Account](#_Azure_Storage_Account_1) section.
+-   Open the file ***Data Factory\\LinkedServices\\StorageLinkedService.json***. Replace \[Azure Storage Account Connection String\] with the connection string from the [Azure Storage Account](#azure-storage-account-1) section.
 
 -   Go back to ***Author and deploy*** in the data factory on ***portal.azure.com.***
 
@@ -638,7 +638,7 @@ First, we will create three data store Linked services for Azure storage service
 
 **AzureSqlLinkedService.** This is the Linked service for the Azure SQL database.
 
--   Open the file ***Data Factory\\LinkedServices\\AzureSqlLinkedService.json***. Replace \[Azure SQL server name\], \[Azure SQL database name\], \[SQL login user name\], and \[SQL login password\] with the corresponding information from the [Azure SQL Server and Database](#_Azure_SQL_Server) section.
+-   Open the file ***Data Factory\\LinkedServices\\AzureSqlLinkedService.json***. Replace \[Azure SQL server name\], \[Azure SQL database name\], \[SQL login user name\], and \[SQL login password\] with the corresponding information from the [Azure SQL Server and Database](#azure-sql-server) section.
 
 -   Go back to ***Author and deploy*** in the data factory on ***portal.azure.com.***
 
@@ -652,7 +652,7 @@ Next, we will create two compute Linked services for Azure computing services.
 
 **AzureMLEndpoint.** This is the Linked service for the Azure Machine Learning web service.
 
--   Open the file ***Data Factory\\LinkedServices\\AzureMLEndpoint.json***. Replace \[Azure Machine Learning web service URI\] and \[Azure Machine Learning web service API key\] with the corresponding information from the [Create Azure Studio ML Workspace and Experiment](#_Create_Azure_Studio) section.
+-   Open the file ***Data Factory\\LinkedServices\\AzureMLEndpoint.json***. Replace \[Azure Machine Learning web service URI\] and \[Azure Machine Learning web service API key\] with the corresponding information from the [Create Azure Studio ML Workspace and Experiment](#create-azure-studio) section.
 
 -   Go back to ***Author and deploy*** in the data factory on ***portal.azure.com.***
 
@@ -844,7 +844,7 @@ PowerBI can also visualize real time data streamed through Stream Analytics.
 
 -   Log in to [Power BI online](https://powerbi.microsoft.com/en-us/)
 
--   On the left panel Datasets section in My Workspace, you should be able to see the dataset **EnergyStreamData**. This is the streaming data you pushed using the [Azure Stream Analytics Job](#_Azure_Stream_Analytics) **energytemplateasapbi. **
+-   On the left panel Datasets section in My Workspace, you should be able to see the dataset **EnergyStreamData**. This is the streaming data you pushed using the [Azure Stream Analytics Job](#azure-stream-analytics) **energytemplateasapbi. **
 
 -   Make sure the *Visualizations* and *Fields* panes are open and shown on the right side of the screen as shown below. If not, click “Edit report” on top of the report.   
   <img src="./media/image12.PNG" width="300" height="250" />
