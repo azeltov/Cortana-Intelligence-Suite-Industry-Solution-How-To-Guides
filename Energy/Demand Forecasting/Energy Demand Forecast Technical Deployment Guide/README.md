@@ -207,7 +207,7 @@ The connection string and event hub name information will be needed to configure
 | Namespace           |energytemplate[UI][N]-ns|
 | Connection String   |                       ||
 
-### <span id="_Check_Event_Hub" class="anchor"><span id="_Toc451359333" class="anchor"></span></span>Check Event Hub
+### Check Event Hub
 
 While running the demo you can validate the event hub created is receiving messages by following the steps below. This can be a useful debugging step to determine if the event hub is functioning as expected, but note that the event hub will only show activity when we start the data generation tool later in this deployment guide:
 
