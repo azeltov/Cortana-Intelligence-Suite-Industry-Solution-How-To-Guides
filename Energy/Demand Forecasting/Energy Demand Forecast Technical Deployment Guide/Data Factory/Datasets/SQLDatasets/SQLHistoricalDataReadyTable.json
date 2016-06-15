@@ -1,0 +1,38 @@
+{
+    "name": "SQLHistoricalDataReadyTable",
+    "properties": {
+        "structure": [
+            {
+                "name": "Id",
+                "type": "String"
+            },
+            {
+                "name": "historicaldata_ready",
+                "type": "String"
+            }
+        ],
+        "published": false,
+        "type": "AzureSqlTable",
+        "linkedServiceName": "AzureSqlLinkedService",
+        "typeProperties": {
+            "tableName": "DataReadyHistorical"
+        },
+        "availability": {
+            "frequency": "Hour",
+            "interval": 1,
+            "style": "EndOfInterval"
+        },
+        "external": true,
+        "policy": {
+            "validation": {
+                "minimumRows": 1
+            },
+            "externalData": {
+                "dataDelay": "00:00:30",
+                "retryInterval": "00:15:00",
+                "retryTimeout": "00:10:00",
+                "maximumRetry": 10
+            }
+        }
+    }
+}

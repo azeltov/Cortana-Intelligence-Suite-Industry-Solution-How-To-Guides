@@ -1,0 +1,38 @@
+{
+    "name": "SQLSubStationRefDataTable",
+    "properties": {
+        "structure": [
+            {
+                "name": "SubStationId",
+                "type": "String"
+            },
+            {
+                "name": "Name",
+                "type": "String"
+            },
+            {
+                "name": "TimeZone",
+                "type": "String"
+            },
+            {
+                "name": "Layer",
+                "type": "String"
+            },
+            {
+                "name": "Unit",
+                "type": "String"
+            }
+        ],
+        "published": false,
+        "type": "AzureSqlTable",
+        "linkedServiceName": "AzureSqlLinkedService",
+        "typeProperties": {
+            "tableName": "substation"
+        },
+        "availability": {
+            "frequency": "Day",
+            "interval": 1,
+            "style": "StartOfInterval"
+        }
+    }
+}

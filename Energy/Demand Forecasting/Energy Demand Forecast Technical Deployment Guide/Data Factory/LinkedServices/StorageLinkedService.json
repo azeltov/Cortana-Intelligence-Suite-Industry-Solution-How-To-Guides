@@ -1,0 +1,10 @@
+{
+    "name": "StorageLinkedService",
+    "properties": {
+		"description": "This is the Linked Service for Azure storage account",
+        "type": "AzureStorage",
+        "typeProperties": {
+            "connectionString": "[Azure Storage Account Connection String]"
+        }
+    }
+}

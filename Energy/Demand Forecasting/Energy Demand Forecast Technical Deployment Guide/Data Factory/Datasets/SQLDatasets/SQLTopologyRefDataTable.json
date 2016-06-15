@@ -1,0 +1,26 @@
+{
+    "name": "SQLTopologyRefDataTable",
+    "properties": {
+        "structure": [
+            {
+                "name": "RegionId",
+                "type": "String"
+            },
+            {
+                "name": "SubStationId",
+                "type": "String"
+            }
+        ],
+        "published": false,
+        "type": "AzureSqlTable",
+        "linkedServiceName": "AzureSqlLinkedService",
+        "typeProperties": {
+            "tableName": "topology"
+        },
+        "availability": {
+            "frequency": "Day",
+            "interval": 1,
+            "style": "StartOfInterval"
+        }
+    }
+}

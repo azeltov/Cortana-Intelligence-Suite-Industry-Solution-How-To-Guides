@@ -1,0 +1,51 @@
+{
+    "name": "SubStationRefDataTable",
+    "properties": {
+        "structure": [
+            {
+                "name": "SubStationId",
+                "type": "String"
+            },
+            {
+                "name": "Name",
+                "type": "String"
+            },
+            {
+                "name": "TimeZone",
+                "type": "String"
+            },
+            {
+                "name": "Layer",
+                "type": "String"
+            },
+            {
+                "name": "Unit",
+                "type": "String"
+            }
+        ],
+        "published": false,
+        "type": "AzureBlob",
+        "linkedServiceName": "StorageLinkedService",
+        "typeProperties": {
+            "fileName": "substation.csv",
+            "folderPath": "demandforecasting/referencedata/substation/",
+            "format": {
+                "type": "TextFormat",
+                "columnDelimiter": ","
+            }
+        },
+        "availability": {
+            "frequency": "Day",
+            "interval": 1,
+            "style": "StartOfInterval"
+        },
+        "external": true,
+        "policy": {
+            "externalData": {
+                "retryInterval": "00:01:00",
+                "retryTimeout": "00:20:00",
+                "maximumRetry": 3
+            }
+        }
+    }
+}

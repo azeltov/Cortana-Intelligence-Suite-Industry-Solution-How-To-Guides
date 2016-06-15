@@ -1,0 +1,68 @@
+{
+    "name": "IntermediateRegion2MLInputDataTable",
+    "properties": {
+        "structure": [
+            {
+                "name": "Timestamp",
+                "type": "String"
+            },
+            {
+                "name": "RegionId",
+                "type": "String"
+            },
+            {
+                "name": "Load",
+                "type": "String"
+            }
+        ],
+        "published": false,
+        "type": "AzureBlob",
+        "linkedServiceName": "StorageLinkedService",
+        "typeProperties": {
+            "folderPath": "energysadata/intermediate/mldata/region=102/date={Year}-{Month}-{Day}/hour={Hour}/",
+            "format": {
+                "type": "TextFormat",
+                "columnDelimiter": ","
+            },
+            "partitionedBy": [
+                {
+                    "name": "Year",
+                    "value": {
+                        "type": "DateTime",
+                        "date": "SliceStart",
+                        "format": "yyyy"
+                    }
+                },
+                {
+                    "name": "Month",
+                    "value": {
+                        "type": "DateTime",
+                        "date": "SliceStart",
+                        "format": "MM"
+                    }
+                },
+                {
+                    "name": "Day",
+                    "value": {
+                        "type": "DateTime",
+                        "date": "SliceStart",
+                        "format": "dd"
+                    }
+                },
+                {
+                    "name": "Hour",
+                    "value": {
+                        "type": "DateTime",
+                        "date": "SliceStart",
+                        "format": "HH"
+                    }
+                }
+            ]
+        },
+        "availability": {
+            "frequency": "Hour",
+            "interval": 1,
+            "style": "EndOfInterval"
+        }
+    }
+}

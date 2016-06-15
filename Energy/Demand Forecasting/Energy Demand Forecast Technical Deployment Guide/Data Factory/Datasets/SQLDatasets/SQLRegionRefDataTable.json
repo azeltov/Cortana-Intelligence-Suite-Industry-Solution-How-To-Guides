@@ -1,0 +1,42 @@
+{
+    "name": "SQLRegionRefDataTable",
+    "properties": {
+        "structure": [
+            {
+                "name": "RegionId",
+                "type": "String"
+            },
+            {
+                "name": "Name",
+                "type": "String"
+            },
+            {
+                "name": "TimeZone",
+                "type": "String"
+            },
+            {
+                "name": "Latitude",
+                "type": "String"
+            },
+            {
+                "name": "Longitude",
+                "type": "String"
+            },
+            {
+                "name": "Unit",
+                "type": "String"
+            }
+        ],
+        "published": false,
+        "type": "AzureSqlTable",
+        "linkedServiceName": "AzureSqlLinkedService",
+        "typeProperties": {
+            "tableName": "region"
+        },
+        "availability": {
+            "frequency": "Day",
+            "interval": 1,
+            "style": "StartOfInterval"
+        }
+    }
+}

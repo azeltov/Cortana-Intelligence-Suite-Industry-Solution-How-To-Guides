@@ -1,0 +1,10 @@
+{
+    "name": "AzureMLEndpoint",
+    "properties": {
+        "type": "AzureML",
+        "typeProperties": {
+            "mlEndpoint": "[Azure Machine Learning web service URI]",
+            "apiKey": "[Azure Machine Learning web service API key]"
+        }
+    }
+}
