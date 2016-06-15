@@ -844,7 +844,7 @@ PowerBI can also visualize real time data streamed through Stream Analytics.
 
 -   Log in to [Power BI online](https://powerbi.microsoft.com/en-us/)
 
--   On the left panel Datasets section in My Workspace, you should be able to see the dataset **EnergyStreamData**. This is the streaming data you pushed using the [Azure Stream Analytics Job](#azure-stream-analytics-jobs) **energytemplateasapbi. **
+-   On the left panel Datasets section in My Workspace, you should be able to see the dataset **EnergyStreamData**. This is the streaming data you pushed using the [Azure Stream Analytics Job](#azure-stream-analytics-jobs) **energytemplateasapbi**.
 
 -   Make sure the *Visualizations* and *Fields* panes are open and shown on the right side of the screen as shown below. If not, click “Edit report” on top of the report.   
   <img src="./media/image12.PNG" width="300" height="250" />
