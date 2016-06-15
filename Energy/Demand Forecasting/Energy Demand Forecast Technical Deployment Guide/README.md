@@ -847,7 +847,7 @@ PowerBI can also visualize real time data streamed through Stream Analytics.
 -   On the left panel Datasets section in My Workspace, you should be able to see the dataset **EnergyStreamData**. This is the streaming data you pushed using the [Azure Stream Analytics Job](#_Azure_Stream_Analytics) **energytemplateasapbi. **
 
 -   Make sure the *Visualizations* and *Fields* panes are open and shown on the right side of the screen as shown below. If not, click “Edit report” on top of the report.   
-  <img src="./media/image12.png" width="300" height="250" />
+  <img src="./media/image12.PNG" width="300" height="250" />
 
 -   Click dataset ‘EnergyStreamData’ on the left panel *Datasets* section.
 
