@@ -29,7 +29,7 @@ You will need the following accounts and software to create this solution:
 
 8.  Power BI Desktop (<https://powerbi.microsoft.com/en-us/desktop>)
 
-It will take about one day to implement this solution if you have all the required software/resources ready to use.
+It will take about one day to implement this solution if you have all the required software/resources ready to use. The content of the document **Energy Demand Forecasting in Cortana Intelligence Suite_Deployment Guide.docx** is the same as this readme file. Use that documentation if you prefer reading a word document. 
 Architecture
 ============
 
@@ -872,9 +872,8 @@ PowerBI can also visualize real time data streamed through Stream Analytics.
 Validation and Results
 ----------------------
 
-It will take about 2~3 hours to generate the first batch demand forecast results. To ensure that the system is functioning as expected, you can check the database tables DemandRealHourly and DemandForecastHourly to verify that data are being added to these tables hourly.
-
-If the DemandForecastHourly table is not receiving results in approximately 3 hours after starting the services you can take the following steps to see where the issue might be, but also consider that the dashboards for the services update about every 15 minutes.
+It will take about 2~3 hours to generate the first batch demand forecast results. If you specified the “start” time of the data factory pipelines to be a time in the future, you need to wait for 2~3 hours after that time and keep the data generator running between the “start” time and the “end” time. If you specified the “start” time to be in the past, you should start seeing data in your Power BI dashboard 2~3 hours after data factory deployment. Use the ***Refresh*** button in Power BI to get the latest data visualization.   
+To ensure that the system is functioning as expected, you can check the database tables DemandRealHourly and DemandForecastHourly to verify that data are being added to these tables hourly.If the DemandForecastHourly table is not receiving results in approximately 3 hours after starting the services you can take the following steps to see where the issue might be, but also consider that the dashboards for the services update about every 15 minutes.
 
 #### Check data streaming
 
