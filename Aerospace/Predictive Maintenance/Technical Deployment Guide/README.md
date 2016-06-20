@@ -105,7 +105,7 @@ for other services like ***Azure Data Factory***.
       1.	Enter one of the container names.
       1.	Repeat a and b until both containers are created.
 
--	Right click the *maintenancesascript* container and choose ***Open Blob Contrainer Editor***
+-	Right click the *maintenancesascript* container and choose ***Open Blob Container Editor***
 -	In the right panel, above the container listing, click the arrow on the ***Upload*** button and choose ***Upload Folder***
 -	Browse to the ***Storage Files\script*** folder in the ZIP content. This will upload the required HIVE queries that will be used in data processing.
 
