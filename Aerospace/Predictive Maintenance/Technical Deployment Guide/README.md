@@ -105,7 +105,7 @@ for other services like ***Azure Data Factory***.
       1.	Enter one of the container names.
       1.	Repeat a and b until both containers are created.
 
--	Right click the *maintenancesascript* container and choose ***View Blob Container***
+-	Right click the *maintenancesascript* container and choose ***Open Blob Contrainer Editor***
 -	In the right panel, above the container listing, click the arrow on the ***Upload*** button and choose ***Upload Folder***
 -	Browse to the ***Storage Files\script*** folder in the ZIP content. This will upload the required HIVE queries that will be used in data processing.
 
@@ -135,7 +135,8 @@ we need to create [consumer groups](https://azure.microsoft.com/en-us/documentat
 -	In the list, choose the namespace we created above - aerospacetemplate[UI][N]-ns
 -	Click ***EVENT HUBS*** at the top of the right pane
 -	The event hub we have created above (aerospacetemplate[UI][N]) should be highlighted. 
--	For both *blobcg* and *pbicg* click the ***CREATE CONSUMER GROUP*** at the bottom of the right pane and add in the appropriate name.
+-	Click the ***CREATE CONSUMER GROUP*** at the bottom of the right pane and add  *blobcg* into the Consumer Group Name.
+Repeat this but this time add *pbicg* into the Consumer Group Name.
 
 Finally, we are going to need some information about this event hub for our event generation 
 application that will feed the event hub. While still at ***manage.windowsazure.com*** 
@@ -191,7 +192,7 @@ Some of the configuration functionality for the stream analytics jobs cannot be 
 
 First we will create the inputs on the jobs. For each of the stream jobs we created at ***portal.azure.com***:
 
--	Navigate to ***manage.windowsazure.com*** and login in to your account.
+-	Navigate to ***manage.windowsazure.com*** and login in to your account (if it is already open you may need to refresh to see the streams you set up earlier).
 -	On the left tab click ***STREAM ANALYTICS***
 -	Click on the one of the jobs that was created in the earlier steps.
 -	At the top of the right page, click ***INPUTS***
