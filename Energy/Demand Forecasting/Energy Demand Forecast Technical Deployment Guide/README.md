@@ -29,7 +29,7 @@ You will need the following accounts and software to create this solution:
 
 8.  Power BI Desktop (<https://powerbi.microsoft.com/en-us/desktop>)
 
-It will take about one day to implement this solution if you have all the required software/resources ready to use. The content of the document **Energy Demand Forecasting in Cortana Intelligence Suite_Deployment Guide.docx** is the same as this readme file. Use that documentation if you prefer reading a word document. 
+It will take about one day to implement this solution if you have all the required software/resources ready to use. The content of the document **Energy Demand Forecasting in Cortana Intelligence Suite_Deployment Guide.docx** is the same as this readme file. Use that documentation if you prefer reading a word document.
 Architecture
 ============
 
@@ -430,7 +430,19 @@ Leaving the generator running for about 15 minutes, we can validate that the ser
 
 First validate event hub by following the steps in [Check Event Hub](#check-event-hub).
 
-Next, validate that the stream analytics job related to storage is working by following the steps in [Check Stream Jobs](#check-stream-jobs) for the energytemplateasablob job.
+Next, start the stream analytics jobs.
+
+-   Navigate to ***portal.azure.com*** and login in to your account.
+
+-   On the left tab click ***Resource groups***
+
+-   Click the resource group created earlier ***energytemplate\_resourcegroup***
+
+-   Click on each stream analytics job and on the pane that appears, click the ***Start*** button at the top of the page.
+
+-   In the newly opened blade on the right, click the ***Start*** button at the bottom left corner.  
+
+Validate that the stream analytics job related to storage is working by following the steps in [Check Stream Jobs](#check-stream-jobs) for the energytemplateasablob job.
 
 Finally, validate that the files are being created in the storage account by following these steps:
 
@@ -779,19 +791,6 @@ Navigate to the folder ***Demand Forecasting Data Generator*** in the solution p
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | The data generator will only run when your laptop is on and has a network connection. It is possible when your computer goes into “sleep” mode that the generator will stop running. To run this generator over a longer period of time it, should be moved to an Azure Virtual Machine or a computer that doesn’t go to sleep and executed there. |
 
-### Stream Analytics
-
-The next thing to start is the stream analytics jobs.
-
--   Navigate to ***portal.azure.com*** and login in to your account.
-
--   On the left tab click ***Resource groups***
-
--   Click the resource group created earlier ***energytemplate\_resourcegroup***
-
--   Click on each stream analytics job and on the pane that appears, click the ***Start*** button at the top of the page.
-
--   In the newly opened blade on the right, click the ***Start*** button at the bottom left corner.
 
 Power BI Dashboard
 ------------------
