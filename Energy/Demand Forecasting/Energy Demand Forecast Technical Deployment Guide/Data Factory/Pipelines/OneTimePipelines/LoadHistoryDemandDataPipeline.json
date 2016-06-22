@@ -9,9 +9,9 @@
                     "scriptPath": "demandforecasting\\script\\hive\\AggregateDemandHistoryRegion.hql",
                     "scriptLinkedService": "StorageLinkedService",
                     "defines": {
-                        "TOPOLOGYREFINPUT": "wasb://demandforecasting@hluenergytemplate25263.blob.core.windows.net/referencedata/topologygeo/",
-                        "RAWINPUT": "wasb://energysadata@hluenergytemplate25263.blob.core.windows.net/demandhistory/",
-                        "AGGREGATEDOUTPUT": "wasb://energysadata@hluenergytemplate25263.blob.core.windows.net/aggregated/demandhistoryregion/"
+                        "TOPOLOGYREFINPUT": "wasb://demandforecasting@<storage account name>.blob.core.windows.net/referencedata/topologygeo/",
+                        "RAWINPUT": "wasb://energysadata@<storage account name>.blob.core.windows.net/demandhistory/",
+                        "AGGREGATEDOUTPUT": "wasb://energysadata@<storage account name>.blob.core.windows.net/aggregated/demandhistoryregion/"
                     }
                 },
                 "inputs": [
