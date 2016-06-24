@@ -22,7 +22,7 @@ CREATE EXTERNAL TABLE PartitionedEnergyDemand30Sec
 ) 
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' 
 LINES TERMINATED BY '10' STORED AS TEXTFILE 
-LOCATION '${hiveconf:PARTITIONEDINPUT}/`date`=${hiveconf:CurrDate}/`hour`=${hiveconf:CurrHour}'
+LOCATION '${hiveconf:PARTITIONEDINPUT}/date=${hiveconf:CurrDate}/hour=${hiveconf:CurrHour}'
 tblproperties ("skip.header.line.count"="1");
 
 DROP TABLE IF EXISTS AggregatedEnergyDemandRegion1hr; 
