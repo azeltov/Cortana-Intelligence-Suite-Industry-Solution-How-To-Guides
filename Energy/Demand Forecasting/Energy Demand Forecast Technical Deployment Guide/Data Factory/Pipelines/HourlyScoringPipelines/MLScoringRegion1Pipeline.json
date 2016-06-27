@@ -9,10 +9,10 @@
                     "scriptPath": "demandforecasting\\script\\hive\\PrepareMLInputRegion1.hql",
                     "scriptLinkedService": "StorageLinkedService",
                     "defines": {
-                        "TOPOLOGYREFINPUT": "wasb://demandforecasting@hluenergytemplate25263.blob.core.windows.net/referencedata/topologygeo/",
-                        "AGGDEMANDINPUT": "wasb://energysadata@hluenergytemplate25263.blob.core.windows.net/aggregated/demandregion1hr/",
-                        "AGGHISTORYDEMANDINPUT": "wasb://energysadata@hluenergytemplate25263.blob.core.windows.net/aggregated/demandhistoryregion/",
-                        "PREPOUTPUT": "$$Text.Format('wasb://energysadata@hluenergytemplate25263.blob.core.windows.net/intermediate/mldata/region=101/date={0:yyyy-MM-dd}/hour={0:HH}/', SliceStart)",
+                        "TOPOLOGYREFINPUT": "wasb://demandforecasting@<storage account name>.blob.core.windows.net/referencedata/topologygeo/",
+                        "AGGDEMANDINPUT": "wasb://energysadata@<storage account name>.blob.core.windows.net/aggregated/demandregion1hr/",
+                        "AGGHISTORYDEMANDINPUT": "wasb://energysadata@<storage account name>.blob.core.windows.net/aggregated/demandhistoryregion/",
+                        "PREPOUTPUT": "$$Text.Format('wasb://energysadata@<storage account name>.blob.core.windows.net/intermediate/mldata/region=101/date={0:yyyy-MM-dd}/hour={0:HH}/', SliceStart)",
                         "CurrDate": "$$Text.Format('{0:yyyy-MM-dd}',SliceStart)",
                         "RegionId": "101"
                     }

@@ -9,9 +9,9 @@
                     "scriptPath": "demandforecasting\\script\\hive\\AggregateDemandRegion1Hr.hql",
                     "scriptLinkedService": "StorageLinkedService",
                     "defines": {
-                        "TOPOLOGYREFINPUT": "wasb://demandforecasting@hluenergytemplate25263.blob.core.windows.net/referencedata/topologygeo/",
-                        "PARTITIONEDINPUT": "wasb://energysadata@hluenergytemplate25263.blob.core.windows.net/demandongoing/",
-                        "AGGREGATEDOUTPUT": "wasb://energysadata@hluenergytemplate25263.blob.core.windows.net/aggregated/demandregion1hr/",
+                        "TOPOLOGYREFINPUT": "wasb://demandforecasting@<storage account name>.blob.core.windows.net/referencedata/topologygeo/",
+                        "PARTITIONEDINPUT": "wasb://energysadata@<storage account name>.blob.core.windows.net/demandongoing/",
+                        "AGGREGATEDOUTPUT": "wasb://energysadata@<storage account name>.blob.core.windows.net/aggregated/demandregion1hr/",
                         "CurrDate": "$$Text.Format('{0:yyyy-MM-dd}',SliceStart)",
                         "CurrHour": "$$Text.Format('{0:HH}',SliceStart)"
                     }

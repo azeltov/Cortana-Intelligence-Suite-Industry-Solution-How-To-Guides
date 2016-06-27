@@ -12,7 +12,7 @@ For more information on how to tailor Cortana Intelligence to your needs [connec
 
 # Technical Audiences
 
-See the **Technical Deployment Guide** folder for a full set of instructions on how to put together and deploy a demand forecasting solution using the Cortana Intelligence Suite. The **Developer Journey Map** included there walks through the different components created as part of the end-to-end solution. For technical problems or questions about deploying this solution, please post in the issues tab of the repository.
+See the **Energy Demand Forecast Technical Deployment Guide** folder for a full set of instructions on how to put together and deploy a demand forecasting solution using the Cortana Intelligence Suite. The **Developer Journey Map** included there walks through the different components created as part of the end-to-end solution. For technical problems or questions about deploying this solution, please post in the issues tab of the repository.
 
 # Related Resources
 
