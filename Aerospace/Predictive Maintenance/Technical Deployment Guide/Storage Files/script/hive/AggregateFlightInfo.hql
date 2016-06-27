@@ -33,7 +33,7 @@ CREATE EXTERNAL TABLE pmsampleinputHour1 (
   s19 string,
   s20 string,
   s21 string)
---partitioned by (date string, hour int)  
+--partitioned by (`date` string, `hour` int)  
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 STORED AS TEXTFILE LOCATION '${hiveconf:RAWINPUT}/date=${hiveconf:Date1}/hour=${hiveconf:Hour1}'
 TBLPROPERTIES("skip.header.line.count"="1");
@@ -69,7 +69,7 @@ CREATE EXTERNAL TABLE pmsampleinputHour2 (
   s19 string,
   s20 string,
   s21 string)
---partitioned by (date string, hour int)  
+--partitioned by (`date` string, `hour` int)  
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 STORED AS TEXTFILE LOCATION '${hiveconf:RAWINPUT}/date=${hiveconf:Date2}/hour=${hiveconf:Hour2}'
 TBLPROPERTIES("skip.header.line.count"="1");
@@ -105,7 +105,7 @@ CREATE EXTERNAL TABLE pmsampleinputHour3 (
   s19 string,
   s20 string,
   s21 string)
---partitioned by (date string, hour int)  
+--partitioned by (`date` string, `hour` int)  
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 STORED AS TEXTFILE LOCATION '${hiveconf:RAWINPUT}/date=${hiveconf:Date3}/hour=${hiveconf:Hour3}'
 TBLPROPERTIES("skip.header.line.count"="1");
@@ -142,11 +142,11 @@ CREATE EXTERNAL TABLE rawcycleinfo (
   s19 FLOAT,
   s20 FLOAT,
   s21 FLOAT)
-partitioned by (date string, hour int) 
+partitioned by (`date` string, `hour` int) 
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
 STORED AS TEXTFILE LOCATION '${hiveconf:AGGREGATEDOUTPUT}';
 
-insert OVERWRITE TABLE rawcycleinfo PARTITION (date, hour)
+insert OVERWRITE TABLE rawcycleinfo PARTITION (`date`, `hour`)
 SELECT
   concat('${hiveconf:CurrentDate}', ' ', lpad('${hiveconf:CurrentHour}', 2, '0') ,':00:00') as aggregatedt,
   id, 
@@ -177,8 +177,8 @@ SELECT
   SUM(s19)  AS s19,
   SUM(s20)  AS s20,
   SUM(s21)  AS s21,
-  '${hiveconf:CurrentDate}' as date,  
-  ${hiveconf:CurrentHour} as hour
+  '${hiveconf:CurrentDate}' as `date`,  
+  ${hiveconf:CurrentHour} as `hour`
  FROM ( 
    select * from pmsampleinputhour1 
    union all

@@ -33,7 +33,7 @@ CREATE EXTERNAL TABLE rawcycleinfo (
   s19 FLOAT,
   s20 FLOAT,
   s21 FLOAT)
-partitioned by (date string, hour int) 
+partitioned by (`date` string, `hour` int) 
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
 STORED AS TEXTFILE LOCATION '${hiveconf:AGGREGATEDINPUT}';
 
@@ -99,11 +99,11 @@ SELECT
   (SUM(s21) / SUM(Counter)) AS s21
  FROM rawcycleinfo a join 
  (
-  select id, cycle from rawcycleinfo where date = '${hiveconf:CurrentDate}'  and hour = ${hiveconf:CurrentHour}
+  select id, cycle from rawcycleinfo where `date` = '${hiveconf:CurrentDate}'  and `hour` = ${hiveconf:CurrentHour}
   and endofcycle = 1
  ) b
 where a.id=b.id and a.cycle=b.cycle and 
-  a.date >= DATE_ADD('${hiveconf:CurrentDate}', -7) and a.date <= '${hiveconf:CurrentDate}'
+  a.`date` >= DATE_ADD('${hiveconf:CurrentDate}', -7) and a.`date` <= '${hiveconf:CurrentDate}'
 GROUP BY a.id, a.cycle;
 
 -- create the anchor table
