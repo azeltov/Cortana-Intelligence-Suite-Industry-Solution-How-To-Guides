@@ -1,8 +1,5 @@
 # Abstract #
 
-There is an overview [blog post]() and a [Gallery Tutorial]() related to this walkthrough. These 
-posts also include more detail on the business problem solved with this architecture.
-
 This document explains how to build the Personalized Offers in Online Retail solution
 piece by piece.
 The manual process gives an implementer an inside 
@@ -13,14 +10,14 @@ view on how the solution is built, with an understanding of each of the componen
 # Requirements
 This section contains required accounts and software you will need to create this solution.
 1.	The full contents of the zip file included here in GitHub.
-5.	A network connection
-2.	A Microsoft Azure subscription (http://azure.microsoft.com). 
-3.	A Studio ML account (http://studio.azureml.net)
-4.	A Microsoft Office 365 subscription for Power BI access.
-6.	[SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx ) or another similar 
+1.	A network connection
+1.	A Microsoft Azure subscription (http://azure.microsoft.com). 
+1.	A Studio ML account (http://studio.azureml.net)
+1.	A Microsoft Office 365 subscription for Power BI access.
+1.	[SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx ) or another similar 
 tool to access a SQL server database.
-7.	[Microsoft Azure Storage Explorer](http://storageexplorer.com/)
-8.	[Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop)
+1.	[Microsoft Azure Storage Explorer](http://storageexplorer.com/)
+1.	[Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop)
  
 # Architecture
 The image, below, shows the overall architecture of the Cortana Intelligence Suite 
@@ -383,9 +380,8 @@ your storage account. If this is the case, you will need to create a second stor
 Now that we have a workspace to work within, we can copy over the required experiment from the Gallery.
 
 -	Navigate to ***studio.azureml.net*** and log into your account
--	Navigate to the experiment [INSERT GALLERY EXP](https://gallery.cortanaintelligence.com/Experiment/bcae226bc74a4cbbb0ff700ac97448bf ) 
->For testing copy the ***Personalized Offer Daily Hourly Minute Last Click [Predictive Exp.] experiment: 
-https://studio.azureml.net/Home/ViewWorkspaceCached/6f4fd07e61594175846d72380c73d885#Workspace/Experiments/ListExperiments
+-	Navigate to the experiment [Personalized Offers for Online Retail Recommendation Model](https://gallery.cortanaintelligence.com/Experiment/Personalized-Offers-for-Online-Retail-Recommendation-Model-v1-Predictive-Exp-1)
+
 -	Click the ***Open in Studio button***. 
 -	In the dialog Copy experiment from Gallery, choose appropriate South Central US and the workspace we created earlier that you would like to copy it into. Click the ***check*** button.
 -	This process may take a minute, but the experiment will open in the requested workspace.
@@ -457,11 +453,6 @@ blob storage to the ***Azure SQL Data Warehouse*** for later reporting in Power 
 re-training our machine learning model. This pipeline makes use of an on demand ***HDInsight*** cluster to construct the necessary data tables 
 for our machine learning model. 
 
->***START SECTION FOR RE-TRAINING***
-*HIVE* scripts are run against the raw data using the cluster to create the required aggregates and engineered features
- for the machine learning experiment.***INSERT THE REST OF THE PROCESS WHEN COMPLETE***
- ***END SECTION FOR RE-TRAINING***
- 
 This data factory will be scheduled to run every hour.
 This means once the entire flow is configured and enabled results from this process will not be present 
 until approximately 1.5 hours later.
@@ -606,13 +597,6 @@ Users will need to customize the visualizations and analysis here to fit their s
 The dashboard can further be customized to show the hot path, i.e. data that is coming from the stream analytics job. 
 The data is available on the Power BI website under the Datasets section. They will appear with the names you configured
 in your Stream Analytics jobs, ***PersonalOffersUserViews*** and ***PersonalOffersProductCount***.
-
-Below are two examples of a hot-path and cold-path dashboard for this solution:
-
-
-![image missing](./Pictures/HotPath.jpg "Screenshot of a hotpath Dashboard in PowerBI")
-
-![image missing](./Pictures/ColdPath.jpg "Screenshot of a coldpath Dashboard in PowerBI")
 
 ## 10.	Getting it all running
 
