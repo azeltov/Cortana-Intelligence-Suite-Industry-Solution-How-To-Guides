@@ -1,0 +1,24 @@
+7/26/2016 2:38 PM [  1]: Starting Generator in Domain: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\
+7/26/2016 2:38 PM [  1]: Scanning for generators.....
+7/26/2016 2:38 PM [  1]: AppConfig Setting: EventHubName -> 
+7/26/2016 2:38 PM [  1]: AppConfig Setting: EventHubConnectionString -> 
+7/26/2016 2:38 PM [  1]: AppConfig Setting: StorageAccountConnectionString -> 
+7/26/2016 2:38 PM [  1]: Searching Generators: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Azure.KeyVault.Core.dll
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.Edm.dll
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.OData.dll
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.Services.Client.dll
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.ServiceBus.dll
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.WindowsAzure.Storage.dll
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Newtonsoft.Json.dll
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\SACommon.dll
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\SADUGeneratorEngine.dll
+7/26/2016 2:38 PM [  1]: Generator Found : SADUGeneratorEngine.SADUDataGenerator 
+7/26/2016 2:38 PM [  1]: Generator Demand Forecasting Data Generator using App.config configuration
+7/26/2016 2:38 PM [  1]: Type Succesfully Constructed : Demand Forecasting Data Generator 
+7/26/2016 2:38 PM [  1]: Searching DLL: C:\Users\honglu\Documents\OneDrive - Microsoft\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\System.Spatial.dll
+7/26/2016 2:38 PM [  1]: Generator data is available
+7/26/2016 2:38 PM [  1]: Active generator selected : Demand Forecasting Data Generator
+7/26/2016 2:38 PM [  1]: Configuration Valid: False
+7/26/2016 2:38 PM [  1]: Getting Configuration Value: EventHubName -> 
+7/26/2016 2:38 PM [  1]: Event Hub Name  > 

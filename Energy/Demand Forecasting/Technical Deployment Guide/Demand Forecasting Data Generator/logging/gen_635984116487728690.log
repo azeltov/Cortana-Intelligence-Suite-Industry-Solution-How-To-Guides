@@ -1,0 +1,165 @@
+5/9/2016 5:27 PM [  1]: Starting Generator in Domain: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\
+5/9/2016 5:27 PM [  1]: Scanning for generators.....
+5/9/2016 5:27 PM [  1]: AppConfig Setting: EventHubName -> 
+5/9/2016 5:27 PM [  1]: AppConfig Setting: EventHubConnectionString -> 
+5/9/2016 5:27 PM [  1]: AppConfig Setting: StorageAccountConnectionString -> 
+5/9/2016 5:27 PM [  1]: Searching Generators: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Azure.KeyVault.Core.dll
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.Edm.dll
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.OData.dll
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.Services.Client.dll
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.ServiceBus.dll
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.WindowsAzure.Storage.dll
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\Newtonsoft.Json.dll
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\SACommon.dll
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\SADUGeneratorEngine.dll
+5/9/2016 5:27 PM [  1]: Generator Found : SADUGeneratorEngine.SADUDataGenerator 
+5/9/2016 5:27 PM [  1]: Generator Demand Forecasting Data Generator using App.config configuration
+5/9/2016 5:27 PM [  1]: Type Succesfully Constructed : Demand Forecasting Data Generator 
+5/9/2016 5:27 PM [  1]: Searching DLL: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\System.Spatial.dll
+5/9/2016 5:27 PM [  1]: Generator data is available
+5/9/2016 5:27 PM [  1]: Active generator selected : Demand Forecasting Data Generator
+5/9/2016 5:27 PM [  1]: Configuration Valid: False
+5/9/2016 5:27 PM [  1]: Getting Configuration Value: EventHubName -> 
+5/9/2016 5:27 PM [  1]: Event Hub Name  > 
+5/9/2016 5:27 PM [  1]: Value Entered: energytemplatehl1
+5/9/2016 5:27 PM [  1]: Setting Configuration Value: EventHubName -> energytemplatehl1
+5/9/2016 5:27 PM [  1]: Getting Configuration Value: EventHubConnectionString -> 
+5/9/2016 5:27 PM [  1]: Event Hub Connection String  > 
+5/9/2016 5:27 PM [  1]: Value Entered: Endpoint=sb://energytemplatehl1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Na5XeG+wnsich0bG7YiQEY8U3x9OEdRPHJpE5CGdsIg=
+5/9/2016 5:27 PM [  1]: Setting Configuration Value: EventHubConnectionString -> Endpoint=sb://energytemplatehl1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Na5XeG+wnsich0bG7YiQEY8U3x9OEdRPHJpE5CGdsIg=
+5/9/2016 5:27 PM [  1]: Getting Configuration Value: StorageAccountConnectionString -> 
+5/9/2016 5:27 PM [  1]: Storage Account Connection String  > 
+5/9/2016 5:28 PM [  1]: Value Entered: DefaultEndpointsProtocol=https;AccountName=energytemplatehl1;AccountKey=3XQn84fwSUAptGUZibEyFHZNcJhUESlMXU2VMDCPgvx7ibFFHErB6lYaaV2XcEau+ZSgWYPdjdZ84J6q3REYpg==
+5/9/2016 5:28 PM [  1]: Setting Configuration Value: StorageAccountConnectionString -> DefaultEndpointsProtocol=https;AccountName=energytemplatehl1;AccountKey=3XQn84fwSUAptGUZibEyFHZNcJhUESlMXU2VMDCPgvx7ibFFHErB6lYaaV2XcEau+ZSgWYPdjdZ84J6q3REYpg==
+5/9/2016 5:28 PM [  1]: Configuration Valid: True
+5/9/2016 5:28 PM [  1]: Attempting to SAVE config for Demand Forecasting Data Generator at location C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\DemandForecastingDataGeneratorConfig.json
+5/9/2016 5:28 PM [  1]: Configuration Valid: True
+5/9/2016 5:28 PM [  1]: Choose an action:
+
+	0 - Start
+	1 - Stop
+	2 - Configure
+	3 - Status
+	4 - Quit
+
+Selection: 
+5/9/2016 5:28 PM [  1]: Selection Entered: 0
+5/9/2016 5:28 PM [  1]: Configuration Valid: True
+5/9/2016 5:28 PM [  1]: Initializing generator Demand Forecasting Data Generator
+5/9/2016 5:28 PM [  1]: Initializing Generator: Demand Forecasting Data Generator
+5/9/2016 5:28 PM [  1]: Getting Configuration Value: StorageAccountConnectionString -> DefaultEndpointsProtocol=https;AccountName=energytemplatehl1;AccountKey=3XQn84fwSUAptGUZibEyFHZNcJhUESlMXU2VMDCPgvx7ibFFHErB6lYaaV2XcEau+ZSgWYPdjdZ84J6q3REYpg==
+5/9/2016 5:28 PM [  3]: Preparing historic data 
+5/9/2016 5:28 PM [  4]: Uploading historic data 
+5/9/2016 5:28 PM [  1]: Azure Connection Information:
+	Connection String: DefaultEndpointsProtocol=https;AccountName=energytemplatehl1;AccountKey=3XQn84fwSUAptGUZibEyFHZNcJhUESlMXU2VMDCPgvx7ibFFHErB6lYaaV2XcEau+ZSgWYPdjdZ84J6q3REYpg==
+	Container: energysadata
+5/9/2016 5:28 PM [  1]: Upload Local File: 
+5/9/2016 5:28 PM [  1]: Azure Connection Information:
+	Connection String: DefaultEndpointsProtocol=https;AccountName=energytemplatehl1;AccountKey=3XQn84fwSUAptGUZibEyFHZNcJhUESlMXU2VMDCPgvx7ibFFHErB6lYaaV2XcEau+ZSgWYPdjdZ84J6q3REYpg==
+	Container: energysadata
+Azure Storage Object:
+	Object: demandhistory/demandhistorydata.csv
+5/9/2016 5:28 PM [  1]: Local Storage Object:
+	Location: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\DUGeneratorData
+	File: current_historical_data_sample.csv
+5/9/2016 5:28 PM [  1]: SourceFile File: C:\Users\honglu\OD\Projects\EnergySolutionPackage\Technical Deployment Guide\Demand Forecasting Data Generator\DUGeneratorData\current_historical_data_sample.csv 
+5/9/2016 5:28 PM [  1]: Starting generator Demand Forecasting Data Generator
+5/9/2016 5:28 PM [  1]: Generator Starting : Demand Forecasting Data Generator
+5/9/2016 5:28 PM [  1]: Initialization time  0:00:01.3330954
+5/9/2016 5:28 PM [  5]: ++Job Start Request Recieved++
+5/9/2016 5:28 PM [  1]: Choose an action:
+
+	0 - Start
+	1 - Stop
+	2 - Configure
+	3 - Status
+	4 - Quit
+
+Selection: 
+5/9/2016 5:28 PM [  5]: Getting Configuration Value: EventHubName -> energytemplatehl1
+5/9/2016 5:28 PM [  5]: Getting Configuration Value: EventHubConnectionString -> Endpoint=sb://energytemplatehl1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Na5XeG+wnsich0bG7YiQEY8U3x9OEdRPHJpE5CGdsIg=
+5/9/2016 5:28 PM [  5]: Event Hub Utility Details: Endpoint=sb://energytemplatehl1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Na5XeG+wnsich0bG7YiQEY8U3x9OEdRPHJpE5CGdsIg= :: energytemplatehl1
+5/9/2016 5:28 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:28 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:28 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:28 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:28 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:28 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:29 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:29 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:29 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:29 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:29 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:29 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:30 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:30 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:30 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:30 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:30 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:30 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:31 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:31 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:31 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:31 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:31 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:31 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:32 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:32 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:32 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:32 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:32 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:32 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:33 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:33 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:33 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:33 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:33 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:33 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:34 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:34 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:34 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:34 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:34 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:34 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:35 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:35 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:35 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:35 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:35 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:35 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:36 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:36 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:36 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:36 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:36 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:36 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:37 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:37 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:37 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:37 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:37 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:37 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:38 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:38 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:38 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:38 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:38 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:38 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:39 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:39 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:39 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:39 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:39 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:39 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:40 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:40 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:40 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:40 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:40 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:40 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:41 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:41 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:41 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:41 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)
+5/9/2016 5:41 PM [  5]: Batch Sending Event Hub Records: energytemplatehl1  -> 7 (count)

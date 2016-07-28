@@ -1,0 +1,89 @@
+7/26/2016 3:04 PM [  1]: Starting Generator in Domain: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\
+7/26/2016 3:04 PM [  1]: Scanning for generators.....
+7/26/2016 3:04 PM [  1]: AppConfig Setting: EventHubName -> 
+7/26/2016 3:04 PM [  1]: AppConfig Setting: EventHubConnectionString -> 
+7/26/2016 3:04 PM [  1]: AppConfig Setting: StorageAccountConnectionString -> 
+7/26/2016 3:04 PM [  1]: Searching Generators: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Azure.KeyVault.Core.dll
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.Edm.dll
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.OData.dll
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.Data.Services.Client.dll
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.ServiceBus.dll
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Microsoft.WindowsAzure.Storage.dll
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\Newtonsoft.Json.dll
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\SACommon.dll
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\SADUGeneratorEngine.dll
+7/26/2016 3:04 PM [  1]: Generator Found : SADUGeneratorEngine.SADUDataGenerator 
+7/26/2016 3:04 PM [  1]: Generator Demand Forecasting Data Generator using App.config configuration
+7/26/2016 3:04 PM [  1]: Type Succesfully Constructed : Demand Forecasting Data Generator 
+7/26/2016 3:04 PM [  1]: Searching DLL: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\System.Spatial.dll
+7/26/2016 3:04 PM [  1]: Generator data is available
+7/26/2016 3:04 PM [  1]: Active generator selected : Demand Forecasting Data Generator
+7/26/2016 3:04 PM [  1]: Configuration Valid: False
+7/26/2016 3:04 PM [  1]: Getting Configuration Value: EventHubName -> 
+7/26/2016 3:04 PM [  1]: Event Hub Name  > 
+7/26/2016 3:06 PM [  1]: Value Entered: energytemplateyc1-ns
+7/26/2016 3:06 PM [  1]: Setting Configuration Value: EventHubName -> energytemplateyc1-ns
+7/26/2016 3:06 PM [  1]: Getting Configuration Value: EventHubConnectionString -> 
+7/26/2016 3:06 PM [  1]: Event Hub Connection String  > 
+7/26/2016 3:07 PM [  1]: Value Entered: Endpoint=sb://energytemplateyc1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=df7TlYQazCMQOqrLLBA/b1/YjxjHQlq/eE4zFmpwdes=
+7/26/2016 3:07 PM [  1]: Setting Configuration Value: EventHubConnectionString -> Endpoint=sb://energytemplateyc1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=df7TlYQazCMQOqrLLBA/b1/YjxjHQlq/eE4zFmpwdes=
+7/26/2016 3:07 PM [  1]: Getting Configuration Value: StorageAccountConnectionString -> 
+7/26/2016 3:07 PM [  1]: Storage Account Connection String  > 
+7/26/2016 3:08 PM [  1]: Value Entered: DefaultEndpointsProtocol=https;AccountName=energytemplateyc1;AccountKey=G3c6wNQDdbJlRi9ZuZ0jCbjIfNuiccUPHSBDM29TwAZT5Z65fMtlJ9oPuX5zLWehDPv34/zGIK+OToyHNmQhXg==
+7/26/2016 3:08 PM [  1]: Setting Configuration Value: StorageAccountConnectionString -> DefaultEndpointsProtocol=https;AccountName=energytemplateyc1;AccountKey=G3c6wNQDdbJlRi9ZuZ0jCbjIfNuiccUPHSBDM29TwAZT5Z65fMtlJ9oPuX5zLWehDPv34/zGIK+OToyHNmQhXg==
+7/26/2016 3:08 PM [  1]: Configuration Valid: True
+7/26/2016 3:08 PM [  1]: Attempting to SAVE config for Demand Forecasting Data Generator at location C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\DemandForecastingDataGeneratorConfig.json
+7/26/2016 3:08 PM [  1]: Configuration Valid: True
+7/26/2016 3:08 PM [  1]: Choose an action:
+
+	0 - Start
+	1 - Stop
+	2 - Configure
+	3 - Status
+	4 - Quit
+
+Selection: 
+7/26/2016 3:09 PM [  1]: Selection Entered: 0
+7/26/2016 3:09 PM [  1]: Configuration Valid: True
+7/26/2016 3:09 PM [  1]: Initializing generator Demand Forecasting Data Generator
+7/26/2016 3:09 PM [  1]: Initializing Generator: Demand Forecasting Data Generator
+7/26/2016 3:09 PM [  1]: Getting Configuration Value: StorageAccountConnectionString -> DefaultEndpointsProtocol=https;AccountName=energytemplateyc1;AccountKey=G3c6wNQDdbJlRi9ZuZ0jCbjIfNuiccUPHSBDM29TwAZT5Z65fMtlJ9oPuX5zLWehDPv34/zGIK+OToyHNmQhXg==
+7/26/2016 3:09 PM [  3]: Preparing historic data 
+7/26/2016 3:09 PM [  4]: Uploading historic data 
+7/26/2016 3:09 PM [  1]: Azure Connection Information:
+	Connection String: DefaultEndpointsProtocol=https;AccountName=energytemplateyc1;AccountKey=G3c6wNQDdbJlRi9ZuZ0jCbjIfNuiccUPHSBDM29TwAZT5Z65fMtlJ9oPuX5zLWehDPv34/zGIK+OToyHNmQhXg==
+	Container: energysadata
+7/26/2016 3:09 PM [  1]: Upload Local File: 
+7/26/2016 3:09 PM [  1]: Azure Connection Information:
+	Connection String: DefaultEndpointsProtocol=https;AccountName=energytemplateyc1;AccountKey=G3c6wNQDdbJlRi9ZuZ0jCbjIfNuiccUPHSBDM29TwAZT5Z65fMtlJ9oPuX5zLWehDPv34/zGIK+OToyHNmQhXg==
+	Container: energysadata
+Azure Storage Object:
+	Object: demandhistory/demandhistorydata.csv
+7/26/2016 3:09 PM [  1]: Local Storage Object:
+	Location: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\DUGeneratorData
+	File: current_historical_data_sample.csv
+7/26/2016 3:09 PM [  1]: SourceFile File: C:\Users\yiychen\OneDrive - Microsoft\SharePoint\Hong Lu\Energy Demand Forecast Technical Deployment Guide\Demand Forecasting Data Generator\DUGeneratorData\current_historical_data_sample.csv 
+7/26/2016 3:09 PM [  1]: Starting generator Demand Forecasting Data Generator
+7/26/2016 3:09 PM [  1]: Generator Starting : Demand Forecasting Data Generator
+7/26/2016 3:09 PM [  1]: Initialization time  0:00:01.417896
+7/26/2016 3:09 PM [  1]: Choose an action:
+
+	0 - Start
+	1 - Stop
+	2 - Configure
+	3 - Status
+	4 - Quit
+
+Selection: 
+7/26/2016 3:09 PM [  5]: ++Job Start Request Recieved++
+7/26/2016 3:09 PM [  5]: Getting Configuration Value: EventHubName -> energytemplateyc1-ns
+7/26/2016 3:09 PM [  5]: Getting Configuration Value: EventHubConnectionString -> Endpoint=sb://energytemplateyc1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=df7TlYQazCMQOqrLLBA/b1/YjxjHQlq/eE4zFmpwdes=
+7/26/2016 3:09 PM [  5]: Event Hub Utility Details: Endpoint=sb://energytemplateyc1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=df7TlYQazCMQOqrLLBA/b1/YjxjHQlq/eE4zFmpwdes= :: energytemplateyc1-ns
+7/26/2016 3:09 PM [  5]: Batch Sending Event Hub Records: energytemplateyc1-ns  -> 7 (count)
+7/26/2016 3:09 PM [  5]: Event Hub Batch Processing Error: Put token failed. status-code: 404, status-description: The messaging entity 'sb://energytemplateyc1-ns.servicebus.windows.net/energytemplateyc1-ns' could not be found. TrackingId:374f18d1-f035-4f7d-abec-1418e42da2eb_G28, SystemTracker:energytemplateyc1-ns.servicebus.windows.net:energytemplateyc1-ns, Timestamp:7/26/2016 7:09:38 PM.
+7/26/2016 3:09 PM [  5]: Job Execute Exception: Put token failed. status-code: 404, status-description: The messaging entity 'sb://energytemplateyc1-ns.servicebus.windows.net/energytemplateyc1-ns' could not be found. TrackingId:374f18d1-f035-4f7d-abec-1418e42da2eb_G28, SystemTracker:energytemplateyc1-ns.servicebus.windows.net:energytemplateyc1-ns, Timestamp:7/26/2016 7:09:38 PM.
+7/26/2016 3:09 PM [  5]: --Job End Request Recieved--
+7/26/2016 5:03 PM [  1]: Selection Entered: 4
+7/26/2016 5:03 PM [  1]: Data generation quitting, press enter key to continue
+7/26/2016 5:03 PM [  1]: Program terminated
