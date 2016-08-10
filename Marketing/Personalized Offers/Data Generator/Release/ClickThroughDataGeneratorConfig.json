@@ -1,6 +1,6 @@
 {
-  "EventHubName": "jcrpoortest2eh",
-  "EventHubConnectionString": "Endpoint=sb://jcrpoortest2.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=nlcjP50EOxNf3b7/0iNeWRjtvRdlpfyIOQvEcQlbEhA=",
-  "AMLEndpointURL": "https://ussouthcentral.services.azureml.net/workspaces/6f4fd07e61594175846d72380c73d885/services/4fcb982b027d40129a8184ccb982f324/execute",
-  "AMLEndpointKey": "YLM848C2uGiMgDAqRuTDEe7I3zrUFvoijtKjf/gaK8kVS+HJ/l1uxPT7H1Gk69N/SBjZ66AMdD4grREtxI+7xQ=="
+  "EventHubName": "",
+  "EventHubConnectionString": "Endpoint=sb://<namespace>.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=<key value>",
+  "AMLEndpointURL": "<AML URL>",
+  "AMLEndpointKey": "<AML KEY>"
 }

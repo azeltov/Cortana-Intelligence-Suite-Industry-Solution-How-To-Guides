@@ -40,6 +40,6 @@
         ],
         "start": "2016-05-02T16:00:00Z",
         "end": "2099-05-05T00:00:00Z",
-        "isPaused": false,
+        "isPaused": false
     }
 }

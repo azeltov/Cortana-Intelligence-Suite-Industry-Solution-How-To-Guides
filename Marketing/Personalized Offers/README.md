@@ -9,16 +9,17 @@ view on how the solution is built, with an understanding of each of the componen
 
 # Requirements
 This section contains required accounts and software you will need to create this solution.
-1.	The full contents of the zip file included here in GitHub.
-1.	A network connection
-1.	A Microsoft Azure subscription (http://azure.microsoft.com). 
-1.	A Studio ML account (http://studio.azureml.net)
-1.	A Microsoft Office 365 subscription for Power BI access.
-1.	[SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx ) or another similar 
+
+1. The full contents of this GitHub repository or the zipfile containing these files.
+1. A network connection
+1. A Microsoft Azure subscription (http://azure.microsoft.com). 
+1. A Studio ML account (http://studio.azureml.net)
+1. A Microsoft Office 365 subscription for Power BI access.
+1. [SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx ) or another similar 
 tool to access a SQL server database.
-1.	[Microsoft Azure Storage Explorer](http://storageexplorer.com/)
-1.	[Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop)
- 
+1. [Microsoft Azure Storage Explorer](http://storageexplorer.com/)
+1. [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop)
+
 # Architecture
 The image, below, shows the overall architecture of the Cortana Intelligence Suite 
 Solution Package for the Personalized Offers in Online Retail store. This architecture provides an 
@@ -126,11 +127,6 @@ In order for our solution to work, we will need to set-up the two *Blob Containe
 		1. Right click on ***Blob Containers*** and choose ***Create Blob Container***
 		1. Enter the one of the container names, *rawdata* and *scripts*
 
-- 	We now need to upload the Hive and SQL scripts to the storage account 
-		1. Right click the *scripts* container and choose ***Open Blob Container Editor***
-		1. In the right panel, above the container listing, click the arrow on the ***Upload*** button and choose ***Upload Folder***
-		1. Browse to the ***.\Hive*** folder in the ZIP content. This will upload the required  queries that will be used in data processing.
-
 - Next, we need to configure the Table storage which holds the user click history over the last day, hour and minute.
  This table is updated in real-time by our stream analytics job.
 	1. Right click on ***Tables*** and choose ***Create Table***
@@ -179,7 +175,7 @@ Finally, we need to record the connection information for this event hub so that
 - 	Click the blue back arrow in the top left of the page to return to the ***SERVICE BUS*** page.
 -	Highlight the namespace we created above (personaloffers[UI][N]-ns) by clicking on the row but do not open the namespace page.
 -	At the bottom of the page click ***CONNECTION INFORMATION***
--	Copy the *CONNECTION STRING* information into the appropriate section in the ConnectoinInformation.txt file.
+-	Copy the *CONNECTION STRING* information into the appropriate section in the ConnectionInformation.txt file.
 
 
 ## 4.	Azure Stream Analytics Jobs
@@ -311,13 +307,14 @@ for setting up this functionality.
 -	On the left tab click ***STREAM ANALYTICS***
 -	Click on and open ***personaloffersasapbi1***.
 -	At the top right of the page, click ***OUTPUTS***
--	Click ***ADD OUTPUT*** and fill in the following in the Wizard:
+-	Click ***ADD AN OUTPUT*** and fill in the following in the Wizard:
 	- Page 1: Select ***Power BI***
 	- Page 2: Click the *Authorize Now* button to link to your Office 365 subscription.
 	- Page 3:
 		- ***OUTPUT ALIAS***: OutputPBI
 		- ***DATASET NAME***: PersonalOffersUserViews
 		- ***TABLE NAME***: PersonalOffersUserViews
+		- ***WORKSPACE***: My Workspace
 	-	Click the check button at the bottom of the page to accept the new output.
 
 #### Start your stream analytics job
@@ -344,13 +341,14 @@ for setting up this functionality.
 -	On the left tab click ***STREAM ANALYTICS***
 -	Click on and open ***personaloffersasapbi2***.
 -	At the top right of the page, click ***OUTPUTS***
--	Click ***ADD OUTPUT*** and fill in the following in the Wizard:
+-	Click ***ADD AN OUTPUT*** and fill in the following in the Wizard:
 	- Page 1: Select ***Power BI***
 	- Page 2: Click the *Authorize Now* button to link to your Office 365 subscription.
 	- Page 3:
 		- ***OUTPUT ALIAS***: OutputPBI
 		- ***DATASET NAME***: PersonalOffersProductCount
 		- ***TABLE NAME***: PersonalOffersProductCount
+		- ***WORKSPACE***: My Workspace
 	-	Click the check button at the bottom of the page to accept the new output.
 
 #### Start your stream analytics job
@@ -377,27 +375,35 @@ The first thing we need to do is to create the workspace that will contain the e
 your storage account. If this is the case, you will need to create a second storage account. 
 -	Click on ***Create an ML Workspace***
 
-Now that we have a workspace to work within, we can copy over the required experiment from the Gallery.
+Now that we have a workspace in which to work, we can copy over the required experiment from the Gallery.
 
 -	Navigate to ***studio.azureml.net*** and log into your account
 -	Navigate to the experiment [Personalized Offers for Online Retail Recommendation Model](https://gallery.cortanaintelligence.com/Experiment/Personalized-Offers-for-Online-Retail-Recommendation-Model-v1-Predictive-Exp-1)
 
 -	Click the ***Open in Studio button***. 
--	In the dialog Copy experiment from Gallery, choose appropriate South Central US and the workspace we created earlier that you would like to copy it into. Click the ***check*** button.
+-	In the dialog Copy experiment from Gallery, choose South Central US and the workspace we created earlier that you would like to copy it into. Click the ***check*** button.
 -	This process may take a minute, but the experiment will open in the requested workspace.
 -	Click ***RUN*** at the bottom of the page. This step will take several minutes to finish and all objects in the graph will have a check box on them to indicate they have run.
--	Click ***DEPLOY WEB SERVICE*** at the bottom of the page to create the Azure Web Service associated with the experiment. When completed the browser will redirect to the web service home page.
-	-	The web service home page can also be found clicking the ***WEB SERVICES*** button on the left menu of the ***studio.azureml.net*** page once logged in. 
--	Copy the ***API key*** from the web service home page and add it to the appropriate section
+-	Click ***DEPLOY WEB SERVICE [New]*** at the bottom of the page to create the Azure Web Service associated with the experiment.
+-	Enter *personaloffers[UI][N]* as the Web Service Name.
+-	Select *Create new...* for Price Plan
+-	Enter *personaloffers[UI][N}]plan* as the Plan Name.
+-	Click the ***Standard DevTest*** box to select it.  
+-	Click the ***Deploy*** button.
+-	When completed the browser will redirect to the web service home page.
+	-	The web service home page can also be found by going to ***services.azureml.net*** page once logged in. 
+-	Click ***Use Web Service***.
+-	Copy the ***Primary key*** from the web service home page and paste it in the ***API Key*** section
 in the ***ConnectionInformation.txt*** file. You will need this information later. 
--	Click the link ***REQUEST/RESPONSE*** under the ***API HELP PAGE*** section. On the REQUEST/RESPONSE help page, copy the Request URI under the Request section and add it to the ConnectionInformation.txt file as you will need this information later. Copy only the URI part https:.../execute ignoring the URI parameters starting with ? .
+-	Copy the ***Request-Response*** URI and add it to the ***ConnectionInformation.txt*** file as you will need this information later. Copy only the URI part https:.../execute ignoring the URI parameters starting with ? .
 
 ## 6.	Configure the data generator desktop application
 Now that we have the event hub, stream analytics, and machine learning web service configured, 
 we can configure the event generator and begin pushing data into our pipeline. 
 
--	Navigate to the hard disk location where the project was unzipped.
--	Go into the ***Personalized Offers Data Generator*** directory and start the *Generator.exe* application.
+-	Navigate to the hard disk location where the project was cloned or unzipped.
+-	Go into the ***Data Generator*** directory and start the *Generatorw.exe* application.
+	- Note that if you have File Name Extensions turned off (the default in Windows), the file *Generatorw.exe.config* will appear as *Generatorw.exe*.  In this case the correct executable file will appear as just *Gereratorw*.
 -	In the left side of the application enter the event hub name, the event hub connection string, the AML endpoint URI, and the AML API key that were collected earlier.
 -	Click the ***Save Configuration Changes*** button.
 -	Click the green ***Start*** button.
@@ -435,6 +441,7 @@ This will allow you to access the database from any computer. Click ***Save***.
 only. You will want to set this rule to the IP range of your secure system.
 
 -	Launch ***SQL Server Management Studio***, or a similar tool, and connect to the database with the information you recorded in the table below.
+	- If the tool you are using supports multiple server types, make sure you select *Database* or *Database Engine*.
 	- The server name in most tools will require the full name: personaloffers[UI][N].database.windows.net,1433
 	- Choose SQL Server Authentication
 	- Enter the admin login and password you entered when creating the database server.
@@ -464,7 +471,7 @@ Now it is time to create the data factory.
 - 	Fill in the following configurations:
 	- 	***Name***: personaloffers[UI][N]
 	- 	***Resource Group***: Choose the resource group created previously ***personaloffers_resourcegroup***
-	-	***Location***: Central US
+	-	***Location***: West US
 -	Click ***Create***
 
 The data factory will take some time to create. The portal page will direct you to the factory 
@@ -490,8 +497,8 @@ in this solution.
 
 
 ### Linked Services
-For this solution we are going to need 3 linked services. The JSON scripts for these linked services are stored
-in ***Data Factory\1-LinkedServices***.
+For this solution we are going to need 3 linked services. The JSON scripts referenced below for these linked services are stored
+in ***ADF\1-LinkedServices***.
 
 First, we will create the linked service for your storage account:
 -	In the Author and Deploy frame of your Data Factory, click on ***New data store*** and select
@@ -503,7 +510,7 @@ the ***ConnectionInformation.txt*** file.
 - 	Click ***Deploy***
 
 Second, we create the linked service for the on-demand HDInsight
--	In the Author and Deploy frame of your Data Factory, click on ***New Compute*** and select 
+-	In the Author and Deploy frame of your Data Factory, click on ***... More***, then ***New Compute*** and select 
  	***On Demand HDInsight cluster*** 
 -	Open script ***personaloffersHDInsightLS.json***
 - 	Copy the contents of the file into the editor and click ***Deploy***
@@ -519,15 +526,16 @@ Next, we create the linked service for the Azure SQL Data Warehouse
 
 ### Datasets
 For this solution we are going to need 2 data sets. The first is the Azure Blob storage data we will be copying and the 
-second is the table in SQL Data Warehouse where the traffic data will be copied to. the JSON scripts for these datasets are stored in ***Data Factory\2-Datasets****.
+second is the table in SQL Data Warehouse where the traffic data will be copied to. the JSON scripts for these datasets
+referenced below are stored in ***ADF\2-Datasets****.
 
 First, we need to create a dataset which defines the structure of the data stored in Azure Blob:
--	In the Author and Deploy frame of your Data Factory, click on ***New dataset*** and select ***Azure Blob storage***
+-	In the Author and Deploy frame of your Data Factory, click on ***... More***, then ***New dataset*** and select ***Azure Blob storage***
 -	Copy the contents from the file ***personaloffersBlobInput.json*** into the editor window replacing the pre-filled text.
 -	Click ***Deploy*** 
 
 Second, we need to create a dataset which defines the table that the Data Factory to copy the web traffic data into.
--	In the Author and Deploy frame of your Data Factory, click on ***New dataset*** and select ***Azure SQL Data Warehouse***
+-	In the Author and Deploy frame of your Data Factory, click on ***... More***, then ***New dataset*** and select ***Azure SQL Data Warehouse***
 -	Copy the contents from the file ***personaloffersSQLDWOutput.json*** into the editor window replacing the pre-filled text.
 -	Click ***Deploy*** 
 
@@ -538,7 +546,7 @@ Second, we need to create a dataset which defines the table that the Data Factor
 ### Pipelines
 
 For this solution we are going to need 1 pipeline to copy the raw web traffic data from stream analytics
-to our SQL Data Warehouse. The JSON file for this pipeline is located in  ***Data Factory\3-Pipelines***
+to our SQL Data Warehouse. The JSON file for this pipeline is located in  ***ADF\3-Pipelines***
 
 There are just a few modifications that these scripts will require. These modifications have to do with
  activity periods for the pipelines. An activity period describes the dates and times that the pipeline 
@@ -579,15 +587,14 @@ as well analysis of the web data over a longer period of time. (cold path).
 #### Cold Path & Power BI Desktop
 -	Install the [Power BI Desktop application](https://powerbi.microsoft.com/en-us/desktop)
 - 	For each of the PBIX files provided in ***/Power BI*** you will need to complete the following steps
-	-	In Power BI Desktop, open the template PBIX file in the package directory ***Power BI***
+	-	In Power BI Desktop, open the template PBIX file in the directory ***Power BI***
 	-	On the application ribbon menu, choose *Edit Queries*
-	-	Under *Query Settings->Applied Steps*, click on the gear icon next to *Source*
-	-	In the SQL Server Database dialog that appears enter in the name of the SQL server and database created earlier.
+	-	Click *New Source* and select *SQL Server*.
+	-	In the SQL Server Database dialog that appears enter in the name of the SQL server and database created earlier.  Leave the radio button on *Import*.
 	-	Click ***OK***
 	-	When prompted for credentials choose ***Database*** tab on the left and enter the user name and password for the SQL server created earlier.
-	-	Under *Query Settings->Applied Steps*, click on the gear icon next to Navigation.
-	-	Select "rawdata" under your own SQL server and database and click ***OK***.
-	-	On the application ribbon menu click *Close and Apply* which will return you to the main application window.
+	-	Click the *rawdata* table and then the *OK* button.
+	-	Click *Close and Apply*.
 	-	On the application ribbon menu click *Publish*, you will be prompted for your credentials.
 	-	Navigate to ***msit.powerbi.com*** site, open the menu on the top left corner of the screen, navigate to Dashboards to see the dashboard that has been published. 
 
