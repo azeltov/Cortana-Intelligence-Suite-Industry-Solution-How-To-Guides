@@ -1,4 +1,4 @@
-# Personalized Offers in Online Retail – A Cortana Intelligence Solution Package #
+# Personalized Offers in Online Retail – A Cortana Intelligence Solution #
 
 In today’s highly competitive and connected environment, modern businesses can no longer survive with generic, static online content. Furthermore, marketing strategies using traditional tools are often expensive, hard to implement and do not produce the desired return on investment. These systems often fail to take full advantage of the data collected to create a more personalized experience for the user. 
 
@@ -28,4 +28,4 @@ Finally, Power BI reads in data from both Azure Stream Analytics and Azure SQL D
 
 ## Getting Started
 
-The Solution Package includes everything you need to deploy the solution, including a step by step walkthrough, files containing all the scripts and other data you’ll need to deploy resources, and a data generator to simulate website activity.  Download the package and open the Readme.md file to get started.
+The solution includes everything you need to deploy the end-to-end pipeline, including a step by step walkthrough, files containing all the scripts and other data you’ll need to deploy resources, and a data generator to simulate website activity.  Download the package and open the Readme.md file to get started.
