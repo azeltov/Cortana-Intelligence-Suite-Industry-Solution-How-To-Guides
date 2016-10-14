@@ -28,4 +28,16 @@ Finally, Power BI reads in data from both Azure Stream Analytics and Azure SQL D
 
 ## Getting Started
 
-The solution includes everything you need to deploy the end-to-end pipeline, including a step by step walkthrough, files containing all the scripts and other data you’ll need to deploy resources, and a data generator to simulate website activity.  Download the package and open the Readme.md file to get started.
+This solution template contains materials to help both technical and business audiences understand our personalized offers solution for the retail industry built on the [Cortana Intelligence Suite](https://www.microsoft.com/en-us/server-cloud/cortana-intelligence-suite/Overview.aspx).
+
+## Business Audiences
+
+In this repository you will find a folder labelled **Solution Overview for Business Audiences**. This folder contains:
+- Infographic: covers the benefits of using advanced analytics for predictive maintenance in the aerospace industry
+- Solution At-a-glance: an introduction to a Cortana Intelligence Suite solution for predictive maintenance
+
+For more information on how to tailor Cortana Intelligence to your needs [connect with one of our partners](http://aka.ms/CISFindPartner).
+
+## Technical Audiences
+
+See the **Technical Deployment Guide** folder for a full set of instructions on how to deploy the end-to-end pipeline, including a step by step walkthrough, files containing all the scripts and other data you’ll need to deploy resources, and a data generator to simulate website activity. **For technical problems or questions about deploying this solution, please post in the issues tab of the repository.**
