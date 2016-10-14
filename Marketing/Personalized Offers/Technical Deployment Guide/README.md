@@ -5,7 +5,7 @@ piece by piece.
 The manual process gives an implementer an inside 
 view on how the solution is built, with an understanding of each of the components and how they are connected.
 
-* For technical probems or questions about deploying this solution, please post in the issues tab of the repository. *
+** For technical probems or questions about deploying this solution, please post in the issues tab of the repository. **
 
 # Requirements
 This section contains required accounts and software you will need to create this solution.
