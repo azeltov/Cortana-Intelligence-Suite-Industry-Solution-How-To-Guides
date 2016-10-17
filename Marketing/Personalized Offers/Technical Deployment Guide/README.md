@@ -21,12 +21,12 @@ tool to access a SQL server database.
 1. [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop)
 
 # Architecture
-The image, below, shows the overall architecture of the Cortana Intelligence Suite 
+The image below shows the overall architecture of the Cortana Intelligence Suite 
 Solution Package for the Personalized Offers in Online Retail store. This architecture provides an 
 end-to-end pipeline to consume website traffic data to deliver real-time, personalized offers within the page. 
 
  
-![image missing](./Pictures/architecture.jpg "Architecture of the Personalized Offers in online Retail solution package")
+![image missing](./Pictures/architecturediagram.jpg "Architecture of the Personalized Offers in online Retail solution package")
 
 In this scenario, a website, such as our fictional *Contoso Mart*, tracks a user's browser history. This web traffic data is sent to an Event Hub which provides a highly scalable
 data ingress service for consuming millions of events per second allowing us to scale this architecture to handle large
