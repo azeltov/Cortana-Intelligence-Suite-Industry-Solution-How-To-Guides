@@ -1,5 +1,0 @@
-{
-  "EventHubName": "energytemplateyc1-ns",
-  "EventHubConnectionString": "Endpoint=sb://energytemplateyc1-ns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=df7TlYQazCMQOqrLLBA/b1/YjxjHQlq/eE4zFmpwdes=",
-  "StorageAccountConnectionString": "DefaultEndpointsProtocol=https;AccountName=energytemplateyc1;AccountKey=G3c6wNQDdbJlRi9ZuZ0jCbjIfNuiccUPHSBDM29TwAZT5Z65fMtlJ9oPuX5zLWehDPv34/zGIK+OToyHNmQhXg=="
-}

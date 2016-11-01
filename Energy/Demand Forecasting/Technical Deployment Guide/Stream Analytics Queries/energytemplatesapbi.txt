@@ -1,1 +1,0 @@
-CREATE TABLE EventHubSource (TimeStamp datetime,SubstationID bigint, Load float); CREATE TABLE SubStationBlobSource (SubstationID bigint,Name nvarchar(max), TimeZone nvarchar(max), Layer bigint, Unit nvarchar(max)); SELECT a.TimeStamp, a.SubstationID, b.Name, a.Load INTO PBIoutput FROM EventHubSource a join SubStationBlobSource b on a.SubstationID=b.SubstationID;
