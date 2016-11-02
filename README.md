@@ -8,6 +8,7 @@ Predict the remaining useful life of aircraft components in order to reduce comp
 ### [Personalized Offers for Retail](https://github.com/Azure/Cortana-Intelligence-Suite-Industry-Solutions/tree/master/Marketing/Personalized%20Offers)
 Generate real-time personalized offers on a retail website to engage more closely with customers.
 
-### Demand Forecasting for Energy (Coming Soon!)
+### [Demand Forecasting for Energy](https://github.com/Azure/cortana-intelligence-energy-demand-forecasting)
+Create short and long term energy demand forecasts to optimize the power generation process, prevent waste, and control costs.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
