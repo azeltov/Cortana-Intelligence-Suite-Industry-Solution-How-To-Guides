@@ -1,5 +1,5 @@
-# Cortana Intelligence Suite Industry Solutions
-The [Cortana Intelligence Suite](https://www.microsoft.com/en-us/cloud-platform/cortana-intelligence-suite) is a fully managed big data and advanced analytics suite to transform your data into intelligent action. These solution guides contain all the necessary materials and instructions needed to put together an end-to-end pipeline for each industry use case using the tools available in the Cortana Intelligence Suite. 
+# Cortana Intelligence Suite Industry Solution How-to Guides
+The [Cortana Intelligence Suite](https://www.microsoft.com/en-us/cloud-platform/cortana-intelligence-suite) is a fully managed big data and advanced analytics suite to transform your data into intelligent action. These solution how-to guides contain all the necessary materials and instructions needed to put together an end-to-end pipeline for each industry use case using the tools available in the Cortana Intelligence Suite. 
 
 ## Solutions
 ### [Predictive Maintenance for Aerospace](https://github.com/Azure/Cortana-Intelligence-Suite-Industry-Solutions/tree/master/Aerospace/Predictive%20Maintenance)
