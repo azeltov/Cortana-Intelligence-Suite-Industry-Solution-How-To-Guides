@@ -4,19 +4,9 @@ The deployment guide below provides a full set of instructions on how to put tog
 
 # Deployment Guide 
 
-There is a lot of documentation around the Cortana Intelligence Suite Solution Template for 
-predictive maintenance for aerospace that predicts the remaining useful life of an aircraft 
-engine.
-     
-There is an overview [blog post](https://blogs.technet.microsoft.com/machinelearning/2016/02/23/predictive-maintenance-for-aerospace-a-cortana-analytics-solution-template/) and a [technical guide](https://azure.microsoft.com/en-us/documentation/articles/cortana-analytics-technical-guide-predictive-maintenance) that provide a higher level overview of the [solution template](https://gallery.cortanaintelligence.com/SolutionTemplate/Predictive-Maintenance-for-Aerospace-1) . 
-
-This information is incredibly useful to understand the concepts behind and technology that 
-went into creating it but does not provide the deep systems understanding that implementers 
-need to understand the design in total. 
-
-This (doc/blob/post) explains how to build the solution piece by piece and in many cases 
+This documentation explains how to build the solution piece by piece and in many cases 
 explains why certain decisions were made. The manual process gives an implementer an inside 
-view on how the solution is built and an understanding of each of the components	.
+view on how the solution is built and an understanding of each of the components.
 
 # Requirements
 This section contains required accounts and software you will need to create this solution.
