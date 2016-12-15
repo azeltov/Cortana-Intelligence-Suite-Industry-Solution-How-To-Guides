@@ -12,6 +12,10 @@ Generate real-time personalized offers on a retail website to engage more closel
 Identify errors, slowdowns and potential failures before they occur rather than after they are detected
 
 
+### [Demand Forecasting and Price Optimization for Retail](https://aka.ms/priceoptimizationretail)
+Ingest historical transaction data , predict future demand, and obtain optimal pricing recommendations on a regular basis, consequently improving profitability and reducing the time and effort required for pricing tasks.
+
+
 ### [Predictive Maintenance for Aerospace](https://aka.ms/predictivemaintenanceaero)
 Predict the remaining useful life of aircraft components in order to reduce component repair costs, improve component stock availability, reduce inventory levels of related assets and improve maintenance planning.
 
