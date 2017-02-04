@@ -27,6 +27,9 @@ Create short and long term energy demand forecasts to optimize the power generat
 ### [Call Center Automation](https://aka.ms/callcenterautomation)
 Create an automated call center using Microsoft Cognitive Services that detects callers' intent and surfaces the right information at the right time.
 
+### [Tank Level Forecasting for Utilities](https://aka.ms/tankforecastingutilities)
+Forecast and monitor tank levels in order to avoid spills, emergency shutdowns, expensive remediation costs, and other problems in a processing facility.
+
 
 *Disclaimer*
 
