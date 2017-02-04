@@ -1,0 +1,8 @@
+title: Cortana Intelligence Suite Solution How-to Guides
+description: Advanced analytics solution guides using the Cortana Intelligence Suite
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
