@@ -3,6 +3,7 @@ The [Cortana Intelligence Suite](https://www.microsoft.com/en-us/cloud-platform/
 For more information on how to tailor Cortana Intelligence to your needs [connect with one of our partners](http://aka.ms/CISFindPartner).
 
 ## Solutions
+
 ### [Personalized Offers for Retail](https://aka.ms/personalizedoffersretail)
 Generate real-time personalized offers on a retail website to engage more closely with customers.    
 
@@ -21,6 +22,9 @@ Create short and long term energy demand forecasts to optimize the power generat
 
 ### [Call Center Automation](https://aka.ms/callcenterautomation)
 Create an automated call center using Microsoft Cognitive Services that detects callers' intent and surfaces the right information at the right time.
+
+### [Tank Level Forecasting for Utilities](https://aka.ms/tankforecastingutilities)
+Forecast and monitor tank levels in order to avoid spills, emergency shutdowns, expensive remediation costs, and other problems in a processing facility.
 
 
 *Disclaimer*
