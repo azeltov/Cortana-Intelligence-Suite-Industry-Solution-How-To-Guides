@@ -15,6 +15,9 @@ Identify errors, slowdowns and potential failures before they occur rather than 
 ### [Demand Forecasting and Price Optimization for Retail](https://aka.ms/priceoptimizationretail)
 Ingest historical transaction data , predict future demand, and obtain optimal pricing recommendations on a regular basis, consequently improving profitability and reducing the time and effort required for pricing tasks.
 
+### [Customer Churn Prediction for Retail](https://aka.ms/customerchurnretail)
+Predict the probability that each customer will churn and find patterns in existing data associated with the predicted churn rate. This information empowers businesses with actionable intelligence to improve customer retention and profit margins.
+
 
 ### [Predictive Maintenance for Aerospace](https://aka.ms/predictivemaintenanceaero)
 Predict the remaining useful life of aircraft components in order to reduce component repair costs, improve component stock availability, reduce inventory levels of related assets and improve maintenance planning.
