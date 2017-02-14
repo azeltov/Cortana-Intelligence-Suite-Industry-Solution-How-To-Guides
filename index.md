@@ -1,4 +1,3 @@
-
 The [Cortana Intelligence Suite](https://www.microsoft.com/en-us/cloud-platform/cortana-intelligence-suite) is a fully managed big data and advanced analytics suite to transform your data into intelligent action. These solution how-to guides contain all the necessary materials and instructions needed to put together an end-to-end pipeline for each industry use case using the tools available in the Cortana Intelligence Suite. 
 
 For more information on how to tailor Cortana Intelligence to your needs [connect with one of our partners](http://aka.ms/CISFindPartner).
@@ -11,6 +10,10 @@ Generate real-time personalized offers on a retail website to engage more closel
 
 ### [Quality Assurance for Manufacturing](https://aka.ms/qualityassurancemanufacturing)
 Identify errors, slowdowns and potential failures before they occur rather than after they are detected
+
+
+### [Demand Forecasting and Price Optimization for Retail](https://aka.ms/priceoptimizationretail)
+Ingest historical transaction data , predict future demand, and obtain optimal pricing recommendations on a regular basis, consequently improving profitability and reducing the time and effort required for pricing tasks.
 
 
 ### [Customer Churn Prediction for Retail](https://aka.ms/customerchurnretail)
