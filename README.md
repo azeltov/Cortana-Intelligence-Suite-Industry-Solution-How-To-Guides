@@ -18,6 +18,9 @@ Ingest historical transaction data , predict future demand, and obtain optimal p
 ### [Customer Churn Prediction for Retail](https://aka.ms/customerchurnretail)
 Predict the probability that each customer will churn and find patterns in existing data associated with the predicted churn rate. This information empowers businesses with actionable intelligence to improve customer retention and profit margins.
 
+### [Product Detection from Images](https://aka.ms/objectdetection)
+Train and operationalize a customized model to locate and classify products in images.
+
 
 ### [Predictive Maintenance for Aerospace](https://aka.ms/predictivemaintenanceaero)
 Predict the remaining useful life of aircraft components in order to reduce component repair costs, improve component stock availability, reduce inventory levels of related assets and improve maintenance planning.
